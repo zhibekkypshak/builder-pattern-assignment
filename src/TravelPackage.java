@@ -1,5 +1,4 @@
 public class TravelPackage {
-
     private String destination;
     private String hotel;
     private String transport;
@@ -10,23 +9,18 @@ public class TravelPackage {
     public void setDestination(String destination) {
         this.destination = destination;
     }
-
     public void setHotel(String hotel) {
         this.hotel = hotel;
     }
-
     public void setTransport(String transport) {
         this.transport = transport;
     }
-
     public void setMeals(String meals) {
         this.meals = meals;
     }
-
     public void setActivities(String activities) {
         this.activities = activities;
     }
-
     public void setInsurance(String insurance) {
         this.insurance = insurance;
     }

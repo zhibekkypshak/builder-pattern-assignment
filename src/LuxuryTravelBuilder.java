@@ -37,6 +37,11 @@ public class LuxuryTravelBuilder implements TravelBuilder {
     }
     @Override
     public TravelPackage build() {
+        if (!travelPackage.isValid()) {
+            throw new IllegalStateException(
+                    "Travel package must have destination, hotel, and transport."
+            );
+        }
         return travelPackage;
     }
 }

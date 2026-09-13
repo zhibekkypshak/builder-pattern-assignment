@@ -24,6 +24,11 @@ public class TravelPackage {
     public void setInsurance(String insurance) {
         this.insurance = insurance;
     }
+    public boolean isValid() {
+        return destination != null &&
+                hotel != null &&
+                transport != null;
+    }
 
     @Override
     public String toString() {
